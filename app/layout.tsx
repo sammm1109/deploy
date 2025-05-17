@@ -3,11 +3,6 @@
 import { useEffect } from "react";
 
 import AOS from "aos";
-import "@/css/style.css";
-import "@/css/additional-styles/swiper.css";
-import "@/css/additional-styles/custom-fonts.css";
-import "@/css/additional-styles/theme.css";
-import "@/css/additional-styles/utility-patterns.css";
 import "aos/dist/aos.css";
 
 import Header from "@/components/ui/header";

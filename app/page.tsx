@@ -3,6 +3,11 @@ export const metadata = {
   description: "Page description",
 };
 
+import "@/css/style.css";
+import "@/css/additional-styles/swiper.css";
+import "@/css/additional-styles/custom-fonts.css";
+import "@/css/additional-styles/theme.css";
+import "@/css/additional-styles/utility-patterns.css";
 import HomePage from "@/components/home";
 import LocationMap from "@/components/location-map";
 import LuxuryResidence from "@/components/luxury-residence";
