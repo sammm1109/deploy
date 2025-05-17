@@ -1,0 +1,22 @@
+/* Ensure the navigation buttons are on the edges and have some padding */
+.swiper-button-next,
+.swiper-button-prev {
+  color: black; /* Button color */
+  padding: 10px; /* Add padding for easier clicking */
+  border-radius: 50%; /* Circular buttons */
+}
+
+/* Position the buttons properly */
+.swiper-button-next {
+  right: 10px; /* Position the next button on the right */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Position the previous button on the left */
+}
+
+.swiper-slide {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}

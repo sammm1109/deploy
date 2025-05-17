@@ -1,18 +1,34 @@
-import type { Metadata } from 'next';
+"use client";
 
-export const metadata: Metadata = {
-  title: 'Next.js on GitHub Pages',
-  description: 'Deploy your static Next.js site to GitHub Pages.',
-};
+import { useEffect } from "react";
 
-export default function RootLayout({
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
+
+export default function DefaultLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  });
+
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <>
+      {/* <Header /> */}
+
+      <main className="grow">{children}</main>
+
+      <Footer border={true} />
+    </>
   );
 }
