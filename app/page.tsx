@@ -3,7 +3,6 @@ export const metadata = {
   description: "Page description",
 };
 
-import "@/css/style.css";
 import HomePage from "@/components/home";
 import LocationMap from "@/components/location-map";
 import LuxuryResidence from "@/components/luxury-residence";
